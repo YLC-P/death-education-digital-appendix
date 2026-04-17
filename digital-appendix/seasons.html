@@ -22,6 +22,7 @@
       color: var(--ink);
       font-family: "Hiragino Sans GB", "PingFang SC", "Microsoft YaHei", "Heiti SC", "SimHei", sans-serif;
       line-height: 1.65;
+      user-select: none;
     }
     a { color: inherit; }
     .page {
@@ -79,6 +80,7 @@
       overflow: hidden;
     }
     .media {
+      position: relative;
       background: #ebe7df;
       display: flex;
       align-items: center;
@@ -95,6 +97,26 @@
       display: block;
       background: #f7f3ed;
       border-radius: 10px;
+    }
+    .watermark {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) rotate(-12deg);
+      width: max-content;
+      max-width: 82%;
+      padding: 10px 18px;
+      border: 1px solid rgba(32,32,32,.18);
+      border-radius: 999px;
+      background: rgba(255,255,255,.38);
+      color: rgba(32,32,32,.38);
+      font-size: clamp(13px, 2.1vw, 22px);
+      font-weight: 800;
+      letter-spacing: .04em;
+      text-align: center;
+      pointer-events: none;
+      backdrop-filter: blur(1px);
+      text-shadow: 0 1px 0 rgba(255,255,255,.24);
     }
     .caption {
       padding: 14px 16px 16px;
@@ -164,37 +186,49 @@
     <section class="grid">
       
     <article class="card">
-      <div class="media"><img src="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E5%9B%9B%E5%AD%A3%E6%9B%B4%E8%BF%AD%E5%8A%A8%E6%80%81%E6%95%88%E6%9E%9C%E5%9B%BE/%E5%86%AC.gif" alt="冬" loading="lazy"></div>
+      <div class="media">
+        <img src="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E5%9B%9B%E5%AD%A3%E6%9B%B4%E8%BF%AD%E5%8A%A8%E6%80%81%E6%95%88%E6%9E%9C%E5%9B%BE/%E5%86%AC.gif" alt="冬" loading="lazy">
+        <div class="watermark">陈奕琳｜死亡教育信息可视化设计研究</div>
+      </div>
       <div class="caption">
         <h2>冬</h2>
-        <p>GIF 动态素材 · <a href="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E5%9B%9B%E5%AD%A3%E6%9B%B4%E8%BF%AD%E5%8A%A8%E6%80%81%E6%95%88%E6%9E%9C%E5%9B%BE/%E5%86%AC.gif" target="_blank" rel="noopener">打开原文件</a></p>
+        <p>GIF 动态素材</p>
       </div>
     </article>
     
 
     <article class="card">
-      <div class="media"><img src="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E5%9B%9B%E5%AD%A3%E6%9B%B4%E8%BF%AD%E5%8A%A8%E6%80%81%E6%95%88%E6%9E%9C%E5%9B%BE/%E5%A4%8F.gif" alt="夏" loading="lazy"></div>
+      <div class="media">
+        <img src="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E5%9B%9B%E5%AD%A3%E6%9B%B4%E8%BF%AD%E5%8A%A8%E6%80%81%E6%95%88%E6%9E%9C%E5%9B%BE/%E5%A4%8F.gif" alt="夏" loading="lazy">
+        <div class="watermark">陈奕琳｜死亡教育信息可视化设计研究</div>
+      </div>
       <div class="caption">
         <h2>夏</h2>
-        <p>GIF 动态素材 · <a href="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E5%9B%9B%E5%AD%A3%E6%9B%B4%E8%BF%AD%E5%8A%A8%E6%80%81%E6%95%88%E6%9E%9C%E5%9B%BE/%E5%A4%8F.gif" target="_blank" rel="noopener">打开原文件</a></p>
+        <p>GIF 动态素材</p>
       </div>
     </article>
     
 
     <article class="card">
-      <div class="media"><img src="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E5%9B%9B%E5%AD%A3%E6%9B%B4%E8%BF%AD%E5%8A%A8%E6%80%81%E6%95%88%E6%9E%9C%E5%9B%BE/%E6%98%A5.gif" alt="春" loading="lazy"></div>
+      <div class="media">
+        <img src="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E5%9B%9B%E5%AD%A3%E6%9B%B4%E8%BF%AD%E5%8A%A8%E6%80%81%E6%95%88%E6%9E%9C%E5%9B%BE/%E6%98%A5.gif" alt="春" loading="lazy">
+        <div class="watermark">陈奕琳｜死亡教育信息可视化设计研究</div>
+      </div>
       <div class="caption">
         <h2>春</h2>
-        <p>GIF 动态素材 · <a href="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E5%9B%9B%E5%AD%A3%E6%9B%B4%E8%BF%AD%E5%8A%A8%E6%80%81%E6%95%88%E6%9E%9C%E5%9B%BE/%E6%98%A5.gif" target="_blank" rel="noopener">打开原文件</a></p>
+        <p>GIF 动态素材</p>
       </div>
     </article>
     
 
     <article class="card">
-      <div class="media"><img src="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E5%9B%9B%E5%AD%A3%E6%9B%B4%E8%BF%AD%E5%8A%A8%E6%80%81%E6%95%88%E6%9E%9C%E5%9B%BE/%E7%A7%8B.gif" alt="秋" loading="lazy"></div>
+      <div class="media">
+        <img src="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E5%9B%9B%E5%AD%A3%E6%9B%B4%E8%BF%AD%E5%8A%A8%E6%80%81%E6%95%88%E6%9E%9C%E5%9B%BE/%E7%A7%8B.gif" alt="秋" loading="lazy">
+        <div class="watermark">陈奕琳｜死亡教育信息可视化设计研究</div>
+      </div>
       <div class="caption">
         <h2>秋</h2>
-        <p>GIF 动态素材 · <a href="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E5%9B%9B%E5%AD%A3%E6%9B%B4%E8%BF%AD%E5%8A%A8%E6%80%81%E6%95%88%E6%9E%9C%E5%9B%BE/%E7%A7%8B.gif" target="_blank" rel="noopener">打开原文件</a></p>
+        <p>GIF 动态素材</p>
       </div>
     </article>
     
@@ -203,5 +237,9 @@
       <p>说明：视频已设置为静音自动循环播放，并保留控制条；GIF 将自动循环播放。若手机浏览器限制自动播放，可点击视频画面或控制条手动播放。</p>
     </footer>
   </main>
+  <script>
+    document.addEventListener("contextmenu", function(event) { event.preventDefault(); });
+    document.addEventListener("dragstart", function(event) { event.preventDefault(); });
+  </script>
 </body>
 </html>
