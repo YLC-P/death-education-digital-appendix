@@ -20,7 +20,7 @@
       margin: 0;
       background: #f3f0eb;
       color: var(--ink);
-      font-family: "Hiragino Sans GB", "PingFang SC", "Microsoft YaHei", sans-serif;
+      font-family: "Hiragino Sans GB", "PingFang SC", "Microsoft YaHei", "Heiti SC", "SimHei", sans-serif;
       line-height: 1.65;
     }
     a { color: inherit; }
@@ -55,10 +55,11 @@
     }
     h1 {
       margin: 18px 0 12px;
-      font-family: "Songti SC", "STSong", serif;
+      font-family: "Heiti SC", "STHeiti", "PingFang SC", "Microsoft YaHei", "SimHei", sans-serif;
       font-size: clamp(34px, 7vw, 72px);
-      line-height: .98;
-      letter-spacing: -.04em;
+      line-height: 1.08;
+      letter-spacing: -.02em;
+      font-weight: 800;
     }
     .subtitle {
       max-width: 780px;
@@ -67,8 +68,9 @@
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
+      gap: 22px;
+      align-items: start;
     }
     .card {
       background: var(--card);
@@ -77,18 +79,22 @@
       overflow: hidden;
     }
     .media {
-      aspect-ratio: 16 / 10;
       background: #ebe7df;
-      display: grid;
-      place-items: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       overflow: hidden;
+      padding: 10px;
+      min-height: 300px;
     }
     img, video {
       width: 100%;
-      height: 100%;
+      height: auto;
+      max-height: 72vh;
       object-fit: contain;
       display: block;
       background: #f7f3ed;
+      border-radius: 10px;
     }
     .caption {
       padding: 14px 16px 16px;
@@ -96,8 +102,10 @@
     }
     h2 {
       margin: 0 0 4px;
+      font-family: "Heiti SC", "STHeiti", "PingFang SC", "Microsoft YaHei", "SimHei", sans-serif;
       font-size: 17px;
       line-height: 1.25;
+      font-weight: 800;
     }
     p { margin: 0; }
     .caption p, .note { color: var(--muted); font-size: 13px; }
@@ -159,7 +167,7 @@
       <div class="media"><img src="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E6%80%9D%E5%BF%B5%E9%A9%BF%E7%AB%99/%E5%AE%9E%E9%AA%8C%E5%91%98.gif" alt="实验员" loading="lazy"></div>
       <div class="caption">
         <h2>实验员</h2>
-        <p>GIF 动态素材</p>
+        <p>GIF 动态素材 · <a href="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E6%80%9D%E5%BF%B5%E9%A9%BF%E7%AB%99/%E5%AE%9E%E9%AA%8C%E5%91%98.gif" target="_blank" rel="noopener">打开原文件</a></p>
       </div>
     </article>
     
@@ -168,7 +176,7 @@
       <div class="media"><video src="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E6%80%9D%E5%BF%B5%E9%A9%BF%E7%AB%99-%E6%B5%8B%E8%AF%95%E5%8A%A8.mov" autoplay muted loop playsinline controls preload="metadata">当前浏览器不支持视频播放。</video></div>
       <div class="caption">
         <h2>思念驿站-测试动</h2>
-        <p>MOV 动态素材</p>
+        <p>MOV 动态素材 · <a href="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E6%80%9D%E5%BF%B5%E9%A9%BF%E7%AB%99-%E6%B5%8B%E8%AF%95%E5%8A%A8.mov" target="_blank" rel="noopener">打开原文件</a></p>
       </div>
     </article>
     
@@ -177,7 +185,7 @@
       <div class="media"><img src="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E6%8A%95%E5%85%A5.gif" alt="投入" loading="lazy"></div>
       <div class="caption">
         <h2>投入</h2>
-        <p>GIF 动态素材</p>
+        <p>GIF 动态素材 · <a href="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E6%8A%95%E5%85%A5.gif" target="_blank" rel="noopener">打开原文件</a></p>
       </div>
     </article>
     
@@ -186,7 +194,7 @@
       <div class="media"><img src="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E6%80%9D%E5%BF%B5%E9%A9%BF%E7%AB%99/%E6%8B%BF%E7%A4%BC%E7%89%A9%E7%9A%84%E5%B0%8F%E7%B2%BE%E7%81%B5.gif" alt="拿礼物的小精灵" loading="lazy"></div>
       <div class="caption">
         <h2>拿礼物的小精灵</h2>
-        <p>GIF 动态素材</p>
+        <p>GIF 动态素材 · <a href="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E6%80%9D%E5%BF%B5%E9%A9%BF%E7%AB%99/%E6%8B%BF%E7%A4%BC%E7%89%A9%E7%9A%84%E5%B0%8F%E7%B2%BE%E7%81%B5.gif" target="_blank" rel="noopener">打开原文件</a></p>
       </div>
     </article>
     
@@ -195,7 +203,7 @@
       <div class="media"><img src="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E6%80%9D%E5%BF%B5%E9%A9%BF%E7%AB%99/%E6%96%B9%E5%90%91%E5%91%98.gif" alt="方向员" loading="lazy"></div>
       <div class="caption">
         <h2>方向员</h2>
-        <p>GIF 动态素材</p>
+        <p>GIF 动态素材 · <a href="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E6%80%9D%E5%BF%B5%E9%A9%BF%E7%AB%99/%E6%96%B9%E5%90%91%E5%91%98.gif" target="_blank" rel="noopener">打开原文件</a></p>
       </div>
     </article>
     
@@ -204,7 +212,7 @@
       <div class="media"><img src="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E6%80%9D%E5%BF%B5%E9%A9%BF%E7%AB%99/%E6%97%A5%E5%8E%86%E5%91%98%E8%92%99%E7%89%88.gif" alt="日历员蒙版" loading="lazy"></div>
       <div class="caption">
         <h2>日历员蒙版</h2>
-        <p>GIF 动态素材</p>
+        <p>GIF 动态素材 · <a href="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E6%80%9D%E5%BF%B5%E9%A9%BF%E7%AB%99/%E6%97%A5%E5%8E%86%E5%91%98%E8%92%99%E7%89%88.gif" target="_blank" rel="noopener">打开原文件</a></p>
       </div>
     </article>
     
@@ -213,7 +221,7 @@
       <div class="media"><img src="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E6%80%9D%E5%BF%B5%E9%A9%BF%E7%AB%99/%E7%A4%BC%E7%89%A9%E8%BE%93%E5%85%A5.gif" alt="礼物输入" loading="lazy"></div>
       <div class="caption">
         <h2>礼物输入</h2>
-        <p>GIF 动态素材</p>
+        <p>GIF 动态素材 · <a href="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E6%80%9D%E5%BF%B5%E9%A9%BF%E7%AB%99/%E7%A4%BC%E7%89%A9%E8%BE%93%E5%85%A5.gif" target="_blank" rel="noopener">打开原文件</a></p>
       </div>
     </article>
     
@@ -222,7 +230,7 @@
       <div class="media"><img src="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E6%80%9D%E5%BF%B5%E9%A9%BF%E7%AB%99/%E7%A5%AD%E6%89%AB%E6%97%A5%E5%8E%861.gif" alt="祭扫日历1" loading="lazy"></div>
       <div class="caption">
         <h2>祭扫日历1</h2>
-        <p>GIF 动态素材</p>
+        <p>GIF 动态素材 · <a href="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E6%80%9D%E5%BF%B5%E9%A9%BF%E7%AB%99/%E7%A5%AD%E6%89%AB%E6%97%A5%E5%8E%861.gif" target="_blank" rel="noopener">打开原文件</a></p>
       </div>
     </article>
     
@@ -231,7 +239,7 @@
       <div class="media"><img src="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E6%80%9D%E5%BF%B5%E9%A9%BF%E7%AB%99/%E7%A5%AD%E6%89%AB%E6%97%A5%E5%8E%862.gif" alt="祭扫日历2" loading="lazy"></div>
       <div class="caption">
         <h2>祭扫日历2</h2>
-        <p>GIF 动态素材</p>
+        <p>GIF 动态素材 · <a href="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E6%80%9D%E5%BF%B5%E9%A9%BF%E7%AB%99/%E7%A5%AD%E6%89%AB%E6%97%A5%E5%8E%862.gif" target="_blank" rel="noopener">打开原文件</a></p>
       </div>
     </article>
     
@@ -240,7 +248,7 @@
       <div class="media"><img src="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E6%80%9D%E5%BF%B5%E9%A9%BF%E7%AB%99/%E7%A5%AD%E6%89%AB%E6%97%A5%E5%8E%863.gif" alt="祭扫日历3" loading="lazy"></div>
       <div class="caption">
         <h2>祭扫日历3</h2>
-        <p>GIF 动态素材</p>
+        <p>GIF 动态素材 · <a href="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E6%80%9D%E5%BF%B5%E9%A9%BF%E7%AB%99/%E7%A5%AD%E6%89%AB%E6%97%A5%E5%8E%863.gif" target="_blank" rel="noopener">打开原文件</a></p>
       </div>
     </article>
     
@@ -249,7 +257,7 @@
       <div class="media"><img src="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E6%80%9D%E5%BF%B5%E9%A9%BF%E7%AB%99/%E8%A1%A8%E6%83%85%E8%AE%B0%E5%BD%95%E5%91%98.gif" alt="表情记录员" loading="lazy"></div>
       <div class="caption">
         <h2>表情记录员</h2>
-        <p>GIF 动态素材</p>
+        <p>GIF 动态素材 · <a href="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E6%80%9D%E5%BF%B5%E9%A9%BF%E7%AB%99/%E8%A1%A8%E6%83%85%E8%AE%B0%E5%BD%95%E5%91%98.gif" target="_blank" rel="noopener">打开原文件</a></p>
       </div>
     </article>
     
@@ -258,7 +266,7 @@
       <div class="media"><img src="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E8%BA%AB%E4%BB%BD%E6%A0%B8%E9%AA%8C.gif" alt="身份核验" loading="lazy"></div>
       <div class="caption">
         <h2>身份核验</h2>
-        <p>GIF 动态素材</p>
+        <p>GIF 动态素材 · <a href="../%E5%8A%A8%E5%9B%BE%26%E8%A7%86%E9%A2%91%E7%B4%A0%E6%9D%90/%E8%BA%AB%E4%BB%BD%E6%A0%B8%E9%AA%8C.gif" target="_blank" rel="noopener">打开原文件</a></p>
       </div>
     </article>
     
