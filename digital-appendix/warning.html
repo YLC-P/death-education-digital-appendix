@@ -67,6 +67,17 @@
       color: var(--muted);
       font-size: clamp(16px, 2.2vw, 20px);
     }
+    .header-note {
+      width: fit-content;
+      max-width: 820px;
+      margin-top: 16px;
+      padding: 8px 13px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,.62);
+      color: var(--muted);
+      font-size: 13px;
+    }
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
@@ -142,13 +153,6 @@
       font-size: 12px;
       font-weight: 700;
     }
-    footer {
-      margin-top: 34px;
-      padding-top: 16px;
-      border-top: 1px solid var(--line);
-      color: var(--muted);
-      font-size: 12px;
-    }
   </style>
 </head>
 
@@ -162,6 +166,7 @@
       <div class="eyebrow">意外风险与安全提示动态展示</div>
       <h1>警示</h1>
       <p class="subtitle">本页集中展示道路交通伤害、跌倒、中毒、烧伤、溺水等风险提示动效，用于补充《岁月之痕》模块中关于意外风险认知的动态表达。</p>
+      <p class="header-note">说明：页面使用已压入中心水印的 MP4 素材，设置为静音自动循环播放，并保留控制条；若手机浏览器限制自动播放，可点击视频画面或控制条手动播放。</p>
     </header>
     <section class="grid">
       
@@ -210,9 +215,6 @@
     </article>
     
     </section>
-    <footer>
-      <p>说明：页面使用已压入中心水印的 MP4 素材，设置为静音自动循环播放，并保留控制条；若手机浏览器限制自动播放，可点击视频画面或控制条手动播放。</p>
-    </footer>
   </main>
   <script>
     document.addEventListener("contextmenu", function(event) { event.preventDefault(); });

@@ -67,6 +67,17 @@
       color: var(--muted);
       font-size: clamp(16px, 2.2vw, 20px);
     }
+    .header-note {
+      width: fit-content;
+      max-width: 820px;
+      margin-top: 16px;
+      padding: 8px 13px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,.62);
+      color: var(--muted);
+      font-size: 13px;
+    }
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
@@ -142,13 +153,6 @@
       font-size: 12px;
       font-weight: 700;
     }
-    footer {
-      margin-top: 34px;
-      padding-top: 16px;
-      border-top: 1px solid var(--line);
-      color: var(--muted);
-      font-size: 12px;
-    }
   </style>
 </head>
 
@@ -162,6 +166,7 @@
       <div class="eyebrow">纪念行为、礼物传递与情绪记录动态展示</div>
       <h1>思念驿站</h1>
       <p class="subtitle">本页展示纪念日历、礼物输入、情绪记录、方向引导等动效，用于补充《思念驿站》模块中情绪安放与纪念行为的动态表达。</p>
+      <p class="header-note">说明：页面使用已压入中心水印的 MP4 素材，设置为静音自动循环播放，并保留控制条；若手机浏览器限制自动播放，可点击视频画面或控制条手动播放。</p>
     </header>
     <section class="grid">
       
@@ -273,9 +278,6 @@
     </article>
     
     </section>
-    <footer>
-      <p>说明：页面使用已压入中心水印的 MP4 素材，设置为静音自动循环播放，并保留控制条；若手机浏览器限制自动播放，可点击视频画面或控制条手动播放。</p>
-    </footer>
   </main>
   <script>
     document.addEventListener("contextmenu", function(event) { event.preventDefault(); });
